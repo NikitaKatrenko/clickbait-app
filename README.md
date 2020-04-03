@@ -14,7 +14,7 @@ Clickbait App Webpack + TypeScript
 $ git clone
 
 # install all dependencies.
-$ npm i
+npm i
 
 # Start developing and serve your app:
 npm start
