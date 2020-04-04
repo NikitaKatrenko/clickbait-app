@@ -107,8 +107,8 @@ input:focus {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  -webkit-transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
-  transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1), margin 0.15s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1), margin 0.15s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
@@ -193,25 +193,25 @@ input:focus {
   margin: -2% -2%;
 }
 
-@media(max-width: 1333px) {
+@media (max-width: 1333px) {
   .card-grid-item {
     flex-basis: 33.33%;
   }
 }
 
-@media(max-width: 1073px) {
+@media (max-width: 1073px) {
   .card-grid-item {
     flex-basis: 33.33%;
   }
 }
 
-@media(max-width: 815px) {
+@media (max-width: 815px) {
   .card-grid-item {
     flex-basis: 50%;
   }
 }
 
-@media(max-width: 555px) {
+@media (max-width: 555px) {
   .filter-form-wrapper {
     flex-direction: column;
     display: flex;
