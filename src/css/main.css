@@ -120,25 +120,16 @@ input:focus {
 
 .card-image {
   height: 55%;
-  width: 120%;
-  background-size: cover;
-  position: relative;
-  background-position: 50% 50%;
-  left: -10.5%;
-  top: -4.5%;
+  width: 100%;
 }
 
-.card-image .centered {
-  text-align: center;
-  transform: translate(-50%, -50%);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 54.5%;
-  left: 50%;
-  width: 60%;
-  height: 60%;
+.centered {
+  display: block;
   background-position: center;
+  background-size: 70% 70%;
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
 .image-type-image {
@@ -155,6 +146,10 @@ input:focus {
 
 .card-content {
   padding: 0 20px;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-content span {
@@ -175,7 +170,6 @@ input:focus {
 }
 
 .more-info {
-  position: absolute;
   bottom: 5px;
   padding-left: 0;
   font-size: 12px;

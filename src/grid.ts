@@ -12,7 +12,7 @@ export class Grid {
     const gridNode = document.createElement('div');
     gridNode.className = 'card-grid-row';
     this.content.map(item => {
-      gridNode.insertAdjacentHTML('afterbegin', this.generateCard(item.title, item.category));
+      gridNode.insertAdjacentHTML('afterbegin', this.generateCard(item));
     });
     this.cardGrid.replaceChild(gridNode, this.cardGrid.childNodes[0]);
   }
@@ -26,22 +26,22 @@ export class Grid {
     this.setData();
   }
 
-  generateCard(title: string, category: string): string {
-    return `<div class="card-grid-item">
+  generateCard(content: ContentConfig): string {
+    return `<article class="card-grid-item">
         <a class="card-link" href=""></a>
         <div class="card-wrapper">
           <div class="card-container">
             <div class="card-image">
-              <span class="centered ${category}-type-image"></span>
+              <span class="centered ${content.category}-type-image"></span>
             </div>
             <div class="card-content">
-              <span class="card-title">${title}</span>
-              <span class="card-category">#${category}</span>
+              <span class="card-title">${content.title}</span>
+              <span class="card-category">#${content.category}</span>
               <span class="more-info">Смотреть больше <i class="arrow-ico"></i></span>
             </div>
           </div>
         </div>
-      </div>`;
+      </article>`;
   }
 
 }
