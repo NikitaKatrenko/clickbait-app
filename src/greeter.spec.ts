@@ -2,7 +2,7 @@ import { Greeter } from './greeter';
 
 describe('Greeter', () => {
     it('should greet', () => {
-        const greeter = new Greeter('Juri');
+        const greeter = new Greeter('Nikita');
         spyOn(console, 'log');
 
         greeter.greet();

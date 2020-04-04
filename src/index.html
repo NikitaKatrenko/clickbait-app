@@ -2,13 +2,83 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clickbait App</title>
+  <meta charset="utf-8">
+  <title>Clickbait Test App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<h1>Hello World</h1>
+<div class="wrapper">
+  <div class="search">
+    <form class="search-form">
+      <input class="search-input" type="search" placeholder="Искать">
+      <i class="search-ico" aria-hidden="true"></i>
+    </form>
+  </div>
+  <div class="filter">
+    <p class="filter-title">Категории:</p>
+    <div class="filter-form-wrapper">
+      <form class="filter-form">
+        <label><input type="checkbox" value="video" id="video"/> видео</label>
+        <label><input type="checkbox" value="image" id="image"/> картинки</label>
+        <label><input type="checkbox" value="text" id="text"/> текст</label>
+      </form>
+    </div>
+  </div>
+  <div class="card-grid">
+    <div class="card-grid-row">
+      <div class="card-grid-item">
+        <a class="card-link" href=""></a>
+        <div class="card-wrapper">
+          <div class="card-container">
+            <div class="card-image">
+              <span class="centered video-type-image"></span>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Это видео взорвало интернет</span>
+              <span class="card-category">#Video</span>
+              <span class="more-info">Смотреть больше <i class="arrow-ico"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-grid-item">
+        <a class="card-link" href=""></a>
+        <div class="card-wrapper">
+          <div class="card-container">
+            <div class="card-image">
+              <span class="centered image-type-image"></span>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Этот котик не оставит равнодушным</span>
+              <span class="card-category">#Image</span>
+              <span class="more-info">Смотреть больше <i class="arrow-ico"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-grid-item">
+        <a class="card-link" href=""></a>
+        <div class="card-wrapper">
+          <div class="card-container">
+            <div class="card-image">
+              <span class="centered text-type-image"></span>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Эта новость шокировала всех</span>
+              <span class="card-category">#Text</span>
+              <span class="more-info">Смотреть больше <i class="arrow-ico"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="/main.bundle.js"></script>
 </body>
 </html>
