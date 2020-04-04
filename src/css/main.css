@@ -178,7 +178,6 @@ input:focus {
   position: absolute;
   bottom: 5px;
   padding-left: 0;
-  transition-duration: .5s;
   font-size: 12px;
   display: flex;
 }
@@ -189,12 +188,6 @@ input:focus {
 
 .more-info i {
   padding-left: 5px;
-  transition-duration: .5s;
-}
-
-.grid-item:hover .more-info i {
-  padding-left: 20px;
-  transition-duration: .5s;
 }
 
 .more-info i::before {
