@@ -16,7 +16,7 @@ body {
 .search {
   width: 100%;
   text-align: center;
-  margin: 50px 0 35px;
+  padding: 50px 0 30px;
 }
 
 .search-input {
@@ -170,6 +170,7 @@ input:focus {
 }
 
 .more-info {
+  margin-top: auto;
   bottom: 5px;
   padding-left: 0;
   font-size: 12px;

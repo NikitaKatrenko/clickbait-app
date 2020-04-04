@@ -4,10 +4,15 @@ webpackConfig.mode = 'production';
 module.exports = function(config) {
   config.set({
     singleRun: true,
-    
-    browsers: [
-      'PhantomJS'
-    ],
+
+    browsers: ['Chrome', 'Chrome_without_security'],
+
+    customLaunchers: {
+      Chrome_without_security: {
+        base: 'Chrome',
+        flags: ['--disable-web-security', '--disable-site-isolation-trials']
+      }
+    },
 
     frameworks: [
       'jasmine'
@@ -29,7 +34,7 @@ module.exports = function(config) {
 
     plugins: [
       require('karma-jasmine'),
-      require('karma-phantomjs-launcher'),
+      require('karma-chrome-launcher'),
       require('karma-webpack')
     ]
   });
