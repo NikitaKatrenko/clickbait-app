@@ -17,9 +17,12 @@ export class Grid {
     this.cardGrid.replaceChild(gridNode, this.cardGrid.childNodes[0]);
   }
 
-  sortData(sortValue: string) {
+  sortData(sortValue: string, filter: Set<string>) {
     const regexp = new RegExp(sortValue, 'i');
-    this.content = Content.filter(item => item.title.match(regexp));
+    this.content = Content.filter(item => {
+      return item.title.match(regexp) && filter.has(item.category)
+        || item.title.match(regexp) && !filter.size;
+    });
     this.setData();
   }
 
