@@ -1,8 +1,8 @@
-import {Content, ContentConfig} from './content.config';
+import {Content, GridConfig} from './grid.config';
 
 export class Grid {
   cardGrid: Element;
-  content: ContentConfig[] = Content;
+  content: GridConfig[] = Content;
 
   constructor(grid: Element) {
     this.cardGrid = grid;
@@ -26,7 +26,7 @@ export class Grid {
     this.setData();
   }
 
-  generateCard(content: ContentConfig): string {
+  generateCard(content: GridConfig): string {
     return `<article class="card-grid-item">
         <a class="card-link" href=""></a>
         <div class="card-wrapper">

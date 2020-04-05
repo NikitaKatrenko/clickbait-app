@@ -25,7 +25,7 @@ export const Content = [
   }
 ];
 
-export interface ContentConfig {
+export interface GridConfig {
   title: string;
   category: string;
 }

@@ -1,13 +1,13 @@
 import { Grid } from './grid';
 
-let elem = document.createElement('div');
-let grid = new Grid(elem);
-let set: Set<string> = new Set();
-let sortValue = '';
+const elem = document.createElement('div');
+const grid = new Grid(elem);
+const set: Set<string> = new Set();
+const sortValue = '';
 
 describe('Grid', () => {
   it('should initialize', () => {
-    let setToHaveBeenCalled = spyOn(Grid.prototype, 'setData');
+    const setToHaveBeenCalled = spyOn(Grid.prototype, 'setData');
 
     grid.setData();
 
@@ -16,7 +16,7 @@ describe('Grid', () => {
 
   it('should sort', () => {
     set.add('video');
-    let sortToHaveBeenCalled = spyOn(Grid.prototype, 'sortData');
+    const sortToHaveBeenCalled = spyOn(Grid.prototype, 'sortData');
 
     grid.sortData(sortValue, set);
 
@@ -24,11 +24,11 @@ describe('Grid', () => {
   });
 
   it('should generate card', () => {
-    let content = {
+    const content = {
       title: 'Это видео взорвало интернет',
       category: 'video'
     };
-    let string = `<article class="card-grid-item">
+    const string = `<article class="card-grid-item">
         <a class="card-link" href=""></a>
         <div class="card-wrapper">
           <div class="card-container">
@@ -44,7 +44,7 @@ describe('Grid', () => {
         </div>
       </article>`;
 
-    let result = grid.generateCard(content);
+    const result = grid.generateCard(content);
 
     expect(result).toBe(string);
   });

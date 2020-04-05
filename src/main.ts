@@ -1,4 +1,4 @@
-import { Grid } from './grid';
+import { Grid } from './app/grid';
 
 document.addEventListener('DOMContentLoaded', (event: CustomEvent) => {
   const cardGrid = document.querySelector('.card-grid');

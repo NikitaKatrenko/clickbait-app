@@ -200,12 +200,6 @@ input:focus {
   }
 }
 
-@media (max-width: 1073px) {
-  .card-grid-item {
-    flex-basis: 33.33%;
-  }
-}
-
 @media (max-width: 815px) {
   .card-grid-item {
     flex-basis: 50%;
